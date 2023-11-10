@@ -1,76 +1,830 @@
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 1440px) {
+	.section__wrapper {
+		max-width: 1200px;
+	}
 	
-	/*Disable Animation on Mobile Devices*/
-	.animated {
-		/*CSS transitions*/
-		-o-transition-property: none !important;
-		-moz-transition-property: none !important;
-		-ms-transition-property: none !important;
-		-webkit-transition-property: none !important;
-		transition-property: none !important;
-		/*CSS transforms*/
-		-o-transform: none !important;
-		-moz-transform: none !important;
-		-ms-transform: none !important;
-		-webkit-transform: none !important;
-		transform: none !important;
-		/*CSS animations*/
-		-webkit-animation: none !important;
-		-moz-animation: none !important;
-		-o-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
+	.offer {
+		max-width: 1200px;
+	}
+	
+	h1.offer__title {
+		font-size: 72px;
+	}
+	
+	section.top__screen a.btn {
+		font-size: 20px;
+	}
+	
+	h3.offer__subtitle {
+		margin: 16px 0 32px 0;
+	}
+	
+	main section {
+		margin-bottom: 70px;
+	}
+	
+	section.about {
+		padding: 120px 0 400px 0;
+	}
+	
+	h2.section__title {
+		font-size: 64px;
+	}
+	
+	section.about p {
+		font-size: 20px;
+	}
+	
+	.home__bg {
+		background-size: 100%;
+	}
+	
+	section.advantages .section__wrapper {
+		padding: 0 70px;
+	}
+	
+	.advantages__item:nth-child(3) {
+		margin-top: 180px;
+	}
+	
+	a.accordion__btn {
+		padding: 18px 28px;
+		margin-right: 15px;
+		border-radius: 15px;
+	}
+	
+	.project__info {
+		max-width: 100%;
+		width: 48%;
+	}
+	
+	.project__img {
+		max-width: 100%;
+		width: 48%;
+	}
+	
+	.project__img img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	
+	section.fos .section__wrapper {
+		padding: 50px 80px;
+	}
+	
+	input.fos__input {
+		width: 300px;
+	}
+	
+	input.fos__submit {
+		width: 300px;
+		padding: 21px;
+	}
+	
+	.fos__politics {
+		width: 300px;
+		font-size: 14px;
+	}
+	
+	form.fos__form {
+		max-width: 60%;
+	}
+	
+	section.fos h2.section__title {
+		font-size: 36px;
+	}
+	
+	.map {
+		max-width: 60%;
+	}
+	
+	a.map__btn {
+		margin-left: 10px;
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.section__wrapper {
+		max-width: 100%;
+	}
+	
+	.offer {
+		max-width: 1000px;
+	}
+	
+	h1.offer__title {
+		font-size: 64px;
+		line-height: 1;
+	}
+	
+	section.top__screen a.btn {
+		font-size: 16px;
+	}
+	
+	h3.offer__subtitle {
+		margin: 10px 0 24px 0;
+	}
+	
+	main section {
+		margin-bottom: 60px;
+	}
+	
+	section.about {
+		padding: 120px 0 355px 0;
+	}
+	
+	h2.section__title {
+		font-size: 56px;
+	}
+	
+	section.about p {
+		font-size: 18px;
+		margin-top: 14px;
+	}
+	
+	.home__bg {
+		background-size: 100%;
+		background-position: center 150px;
+	}
+	
+	section.advantages .section__wrapper {
+		padding: 0 70px;
+	}
+	
+	.advantages__item:nth-child(3) {
+		margin-top: 180px;
+	}
+	
+	a.accordion__btn {
+		padding: 15px 25px;
+		margin-right: 10px;
+		border-radius: 10px;
+		font-size: 14px;
+	}
+	
+	.project__info {
+		max-width: 100%;
+		width: 48%;
+	}
+	
+	.project__img {
+		max-width: 100%;
+		width: 48%;
+	}
+	
+	.project__img img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	
+	section.fos .section__wrapper {
+		padding: 30px 50px;
+	}
+	
+	input.fos__input {
+		width: 260px;
+		padding: 14px 24px;
+		font-size: 14px;
+	}
+	
+	input.fos__submit {
+		width: 260px;
+		padding: 16px;
+		font-size: 14px;
+	}
+	
+	.fos__politics {
+		width: 260px;
+		font-size: 12px;
+	}
+	
+	form.fos__form {
+		max-width: 60%;
+	}
+	
+	section.fos h2.section__title {
+		font-size: 30px;
+	}
+	
+	.map {
+		max-width: 60%;
+		height: 330px;
+	}
+	
+	a.map__btn {
+		margin-left: 10px;
+		padding: 10px 25px;
+		display: flex;
+		font-size: 14px;
+	}
+
+	a.logo svg {
+	    width: 100px;
+	    height: 30px;
+	}
+	
+	header.header .section__wrapper {
+	    padding: 10px 10px 10px 30px;
+	}
+	
+	a.menu__link, a.header__phone {
+	    margin-right: 35px;
+	    font-size: 15px;
+	}
+	
+	a.header__phone {
+	    font-size: 12px;
+	    margin-right: 15px;
+	}
+	
+	a.btn {
+	    padding: 10px 25px;
+	    display: flex;
+	    font-size: 14px;
+	}
+	
+	.header__call {
+	    display: flex;
+	    align-items: center;
+	}
+	
+	.advantages__item h3 {
+	    font-size: 20px;
+	    margin-bottom: 10px;
+	}
+	
+	.advantages__item p {
+	    font-size: 14px;
+	}
+	
+	section.projects h2.section__title {
+	    margin-bottom: 20px;
+	}
+	
+	.accordion__body {
+	    margin-top: 30px;
+	    height: 380px;
+	}
+	
+	.project__text {
+	    font-size: 14px;
+	}
+	
+	.project__info a.btn {
+	    margin-top: 15px;
+	}
+	
+	section.projects {
+	    padding: 60px 0;
+	}
+	
+	.contact__group {
+	    margin-bottom: 30px;
+	}
+	
+	.contact__group:nth-child(4) a {
+	    font-size: 30px;
+	}
+	
+	.contact__btns {
+	    display: flex;
+	    align-items: flex-start;
+	}
+	
+	a.footer__menu__link, a.footer__call, .footer__bottom a {
+	    font-size: 14px;
+	}
+
+	input.modal__input {
+		padding: 15px 25px;
+		font-size: 16px;
+	}
+	
+	input.modal__submit {
+		height: 50px;
+		font-size: 16px;
+	}
+	
+	h3.modal__title {
+		font-size: 48px;
+	}
+	
+	.modal__wrapper {
+		max-width: 600px;
+		padding: 70px 40px;
+	}
+	
+	.modal__politics {
+		font-size: 12px;
+	}
+	
+	.modal__close svg {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+	header.header {
+	    padding: 0 20px;
+	}
+	
+	.menu {
+	    display: none;
+	}
+
+	.mobile__menu {
+		display: flex;
+		background: url(../img/mob__nav.svg) no-repeat left center;
+		background-size: 23px;
+		padding: 0 0 0 30px;
+		cursor: pointer;
+	}
+
+	.mobile__menu.active {
+	    background: url(../img/mob__close.svg) no-repeat left center;
+	    background-size: 23px;
+	    padding: 0 0 0 30px;
+	}
+	
+	a.header__phone {
+	    display: none;
+	}
+	
+	.offer {
+	    max-width: 100%;
+	    padding: 0 20px;
+	}
+		
+	main section {
+	    padding: 0 20px;
+	}
+	
+	section.top__screen {
+	    padding: 0;
+	}
+	
+	section.top__screen a.btn {
+	    font-size: 24px;
+	    padding: 15px 50px;
+	}
+	
+	section.about {
+	    padding: 21px 20px 460px 20px;
+	}
+	
+	.home__bg {
+	    background-size: 200%;
+	    background-position: center 60px;
+	}
+	
+	section.advantages .section__wrapper {
+	    padding: 0;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	
+	.advantages__item {
+	    max-width: 100%;
+	    width: 45%;
+	}
+	
+	.advantages__item h3 {
+	    font-size: 24px;
+	}
+	
+	.advantages__item p {
+	    font-size: 18px;
+	}
+	
+	.advantages__item:nth-child(1) {
+	    margin-top: 0;
+	}
+	
+	.advantages__item:nth-child(2) {
+	    margin-top: 40px;
+	    margin-right: 40%;
+	}
+	
+	.advantages__item:nth-child(3) {
+	    margin: 40px 0 0 40%;
+	}
+	
+	section.projects .section__wrapper {
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+	
+	section.projects {
+	    padding: 80px 20px;
+	}
+	
+	.projects__accordion {
+	    display: flex;
+	    flex-direction: column;
+	    width: 100%;
+	}
+	
+	.project__item {
+	    flex-direction: column;
+	    align-items: flex-start;
+	    justify-content: flex-start;
+	}
+	
+	.project__info {
+	    width: 100%;
+	}
+	
+	.accordion__body {
+	    height: 700px;
+	}
+	
+	.project__img {
+	    width: 100%;
+	    margin-top: 30px;
+	}
+	
+	.accordion__header {
+	    flex-wrap: wrap;
+	}
+	
+	section.fos .section__wrapper {
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+	
+	section.fos h2.section__title {
+	    margin-bottom: 30px;
+	}
+	
+	form.fos__form {
+	    max-width: 100%;
+	}
+	
+	input.fos__input {
+	    width: 49%;
+	}
+	
+	.fos__politics {
+	    width: 49%;
+	}
+	
+	input.fos__submit {
+	    width: 49%;
+	}
+	
+	section.contacts .section__wrapper {
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+	
+	.map {
+	    max-width: 100%;
+	    margin-top: 30px;
+	}
+	
+	.logo__bg {
+	    background-size: 200%;
+	    background-position: center 40%;
+	}
+	
+	footer.footer {
+	    padding: 30px 20px;
+	}
+	
+	a.footer__menu__link, a.footer__call, .footer__bottom a {
+	    margin-right: 20px;
 	}
 
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 560px) {
+	header.header {
+	    padding: 0px 10px;
+	    top: 10px;
+	}
+	
+	.menu {
+	    display: none;
+	}
+
+	.mobile__menu {
+		display: flex;
+		background: url(../img/mob__nav.svg) no-repeat left center;
+		background-size: 23px;
+		padding: 0 0 0 30px;
+		font-size: 16px;
+	}
+
+	.mobile__menu.active {
+	    background: url(../img/mob__close.svg) no-repeat left center;
+	    background-size: 23px;
+	    padding: 0 0 0 30px;
+	}
+	
+	a.header__phone {
+	    display: none;
+	}
+	
+	.offer {
+	    max-width: 100%;
+	    padding: 0 20px;
+	}
+		
+	main section {
+	    padding: 0 20px;
+	}
+	
+	section.top__screen {
+	    padding: 0;
+	}
+	
+	section.top__screen a.btn {
+	    font-size: 20px;
+	    padding: 12px 40px;
+	}
+	
+	section.about {
+	    padding: 0px 20px 460px 20px;
+	}
+	
+	.home__bg {
+	    background-size: 250%;
+	    background-position: -401px 220px;
+	}
+	
+	section.advantages .section__wrapper {
+	    padding: 0;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	
+	.advantages__item {
+	    max-width: 100%;
+	    width: 70%;
+	}
+	
+	.advantages__item h3 {
+	    font-size: 20px;
+	}
+	
+	.advantages__item p {
+	    font-size: 14px;
+	}
+	
+	.advantages__item:nth-child(1) {
+	    margin-top: 0;
+	}
+	
+	.advantages__item:nth-child(2) {
+	    margin-top: 30px;
+	    margin-right: 20%;
+	}
+	
+	.advantages__item:nth-child(3) {
+	    margin: 30px 0 0 20%;
+	}
+	
+	section.projects .section__wrapper {
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+	
+	section.projects {
+	    padding: 80px 20px;
+	}
+	
+	.projects__accordion {
+	    display: flex;
+	    flex-direction: column;
+	    width: 100%;
+	}
+	
+	.project__item {
+	    flex-direction: column;
+	    align-items: flex-start;
+	    justify-content: flex-start;
+	}
+	
+	.project__info {
+	    width: 100%;
+	}
+	
+	.accordion__body {
+	    height: 660px;
+	}
+	
+	.project__img {
+	    width: 100%;
+	    height: 240px;
+	    margin-top: 30px;
+	}
+	
+	.accordion__header {
+	    flex-wrap: nowrap;
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+	
+	section.fos .section__wrapper {
+	    flex-direction: column;
+	    align-items: flex-start;
+	    padding: 30px;
+	}
+	
+	section.fos h2.section__title {
+	    margin-bottom: 20px;
+	    font-size: 22px;
+	}
+	
+	form.fos__form {
+	    max-width: 100%;
+	}
+	
+	input.fos__input {
+	    width: 100%;
+	    margin-bottom: 10px;
+	}
+	
+	.fos__politics {
+	    width: 100%;
+	}
+	
+	input.fos__submit {
+	    width: 100%;
+	    margin-bottom: 10px;
+	}
+	
+	section.contacts .section__wrapper {
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+	
+	.map {
+	    max-width: 100%;
+	    margin-top: 30px;
+	}
+	
+	.logo__bg {
+	    background-size: 200%;
+	    background-position: center 40%;
+	}
+	
+	footer.footer {
+	    padding: 30px 20px;
+	}
+	
+	a.footer__menu__link, a.footer__call, .footer__bottom a {
+	    margin-right: 0;
+	    margin-bottom: 15px;
+	    font-size: 16px;
+	}
+
+	.header__call a.btn {
+	    display: none;
+	}
+	
+	.header__call {
+	    display: none;
+	}
+	
+	header.header .section__wrapper {
+	    padding: 10px 30px;
+	}
+	
+	h1.offer__title {
+	    font-size: 44px;
+	}
+	
+	h3.offer__subtitle {
+	    font-size: 24px;
+	}
+	
+	h2.section__title {
+	    font-size: 36px;
+	}
+	
+	section.about p {
+	    font-size: 16px;
+	    line-height: 1.8;
+	}
+	
+	a.accordion__btn {
+	    margin-bottom: 10px;
+	}
+
+	.form__inputs {
+	    flex-direction: column;
+	    align-items: flex-start;
+	    margin: 0;
+	}
+	
+	.form__submit {
+	    flex-direction: column-reverse;
+	    align-items: flex-start;
+	}
+	
+	.contact__btns {
+	    flex-direction: column;
+	    align-items: flex-start;
+	    width: 100%;
+	}
+	
+	.contact__btns a.btn {
+	    font-size: 16px;
+	    width: 100%;
+	    text-align: center;
+	    justify-content: center;
+	    margin-bottom: 10px;
+	}
+	
+	.contacts__info {
+	    width: 100%;
+	}
+	
+	a.map__btn {
+	    font-size: 16px;
+	    width: 100%;
+	    justify-content: center;
+	    margin: 0;
+	}
+	
+	.footer__top {
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+	
+	.footer__menu {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: flex-start;
+	    margin: 20px 0;
+	    text-align: center;
+	}
+	
+	.footer__bottom {
+	    flex-direction: column;
+	    align-items: flex-start;
+	    font-size: 16px;
+	}
+	
+	p.copyright {
+	    margin-bottom: 10px;
+	}
+
+	.nav__list {
+	    width: 80%;
+	}
+	
+	a.nav__link {
+	    font-size: 20px;
+	    padding: 10px;
+	}
+	
+	.modal__wrapper {
+	    width: 100vw;
+	    height: 100vh;
+	    justify-content: center;
+	    background-size: 300%;
+	    background-position: 25% center;
+	}
+	
+	h3.modal__title {
+	    font-size: 32px;
+	}
+	
+	.modal__inputs {
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+	
+	input.modal__input {
+	    width: 100%;
+	    margin-bottom: 10px;
+	}
+	
+	.modal__submit {
+	    flex-direction: column-reverse;
+	}
+	
+	.modal__politics {
+	    width: 100%;
+	}
+	
+	input.modal__submit {
+	    width: 100%;
+	    margin-bottom: 15px;
+	}
+
+	a.footer__logo {
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width : 375px) {
 
 }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
 
-}
-
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}

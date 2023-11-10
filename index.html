@@ -23,6 +23,45 @@
 
 <body>
 
+	<div class="modal__container">
+		<div class="modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__wrapper">
+				<div class="modal__close">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50px" height="50px" viewBox="0,0,256,256"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M7.71875,6.28125l-1.4375,1.4375l17.28125,17.28125l-17.28125,17.28125l1.4375,1.4375l17.28125,-17.28125l17.28125,17.28125l1.4375,-1.4375l-17.28125,-17.28125l17.28125,-17.28125l-1.4375,-1.4375l-17.28125,17.28125z"></path></g></g></svg>
+				</div>
+				<h3 class="modal__title">Оставьте заявку и мы свяжемся с Вами в ближайшее время</h3>
+				<form enctype="multipart/form-data" method="post" onsubmit="submitForm(event)" action="mail.php" class="modal__form">
+					<div class="modal__inputs">
+						<input type="text" name="name" placeholder="Ваше имя" class="modal__input">
+						<input type="tel" name="phone" placeholder="Ваш телефон" class="modal__input">
+					</div>
+					<div class="modal__submit">
+						<div class="modal__politics">
+							Нажимая кнопку «Отправить», вы подтверждаете свое <a href="#">согласие на обработку персональных данных</a>
+						</div>
+						<input type="submit" value="Отправить" class="modal__submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="nav__container">
+		<div class="nav">
+			<div class="nav__overlay"></div>
+			<div class="nav__wrapper">
+				<div class="nav__list">
+					<a href="#about" class="nav__link">О нас</a>
+					<a href="#advantages" class="nav__link">Преимущества</a>
+					<a href="#projects" class="nav__link">Наши проекты</a>
+					<a href="#contacts" class="nav__link">Контакты</a>
+					<a href="tel:+73472008991" class="nav__phone">+7 (347) 200-89-91</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<header class="header">
 		<div class="section__wrapper">
 			<a href="/" class="logo">
@@ -42,11 +81,12 @@
 					<path d="M50.1026 8.77721L41.4546 17.469L42.8797 18.9013L50.1026 11.6419L57.3255 18.9013L58.7506 17.469L50.1026 8.77721Z" fill="#041F33"/>
 				</svg>					
 			</a>
+			<div class="mobile__menu">Меню</div>
 			<div class="menu">
-				<a href="#" class="menu__link">О нас</a>
-				<a href="#" class="menu__link">Преимущества</a>
-				<a href="#" class="menu__link">Наши проекты</a>
-				<a href="#" class="menu__link">Контакты</a>
+				<a href="#about" class="menu__link">О нас</a>
+				<a href="#advantages" class="menu__link">Преимущества</a>
+				<a href="#projects" class="menu__link">Наши проекты</a>
+				<a href="#contacts" class="menu__link">Контакты</a>
 			</div>
 			<div class="header__call">
 				<a href="tel:+73472008991" class="header__phone">+7 (347) 200-89-91</a>
@@ -62,6 +102,13 @@
 				<div class="top__screen__slider swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
+							<div class="top__screen__overlay"></div>
+							<video preload="auto" autoplay="" muted="" loop="" playsinline="">
+								<source src="video/top__screen.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="swiper-slide">
+							<div class="top__screen__overlay"></div>
 							<img src="img/top__screen.png" alt="">
 						</div>
 					</div>
@@ -75,7 +122,7 @@
 		</section>
 	
 		<div class="home__bg">
-			<section class="about">
+			<section class="about" id="about">
 				<div class="section__wrapper">
 					<h2 class="section__title">О нас</h2>
 					<div class="section__content">
@@ -84,7 +131,7 @@
 				</div>
 			</section>
 	
-			<section class="advantages">
+			<section class="advantages" id="advantages">
 				<div class="section__wrapper">
 					<div class="advantages__item">
 						<h3>Высокое качество</h3>
@@ -102,14 +149,14 @@
 			</section>
 		</div>
 
-		<section class="projects">
+		<section class="projects" id="projects">
 			<div class="section__wrapper">
 				<h2 class="section__title">Наши проекты</h2>
 				<div class="projects__accordion">
 					<div class="accordion__header">
-						<a href="#" class="accordion__btn active">Индивидуальное строительство домов </a>
-						<a href="#" class="accordion__btn">Коттеджный посёлок Восточный</a>
-						<a href="#" class="accordion__btn">Продажа участок</a>
+						<a href="#" class="accordion__btn btn__1 active">Индивидуальное строительство домов </a>
+						<a href="#" class="accordion__btn btn__2">Коттеджный посёлок Восточный</a>
+						<a href="#" class="accordion__btn btn__3">Продажа участков</a>
 					</div>
 					<div class="accordion__body">
 						<div class="project__item project__1 active">
@@ -159,7 +206,7 @@
 								<a href="#" class="btn">Оставить заявку</a>
 							</div>
 							<div class="project__img">
-								<img src="img/project__2.png" alt="">
+								<img src="img/project__3.png" alt="">
 							</div>
 						</div>
 
@@ -172,7 +219,7 @@
 								<a href="#" class="btn">Оставить заявку</a>
 							</div>
 							<div class="project__img">
-								<img src="img/project__3.png" alt="">
+								<img src="img/project__2.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -199,7 +246,7 @@
 				</div>
 			</section>
 	
-			<section class="contacts">
+			<section class="contacts" id="contacts">
 				<div class="section__wrapper">
 					<div class="contacts__info">
 						<h2 class="section__title">Контакты</h2>
