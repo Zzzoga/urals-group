@@ -393,6 +393,7 @@ a.accordion__btn:hover, a.accordion__btn.active {
     width: 100%;
     background: #C1DAED;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .project__info .swiper-slide {
@@ -403,7 +404,7 @@ a.accordion__btn:hover, a.accordion__btn.active {
 }
 
 .project__img .swiper-slide {
-    border-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
     overflow: hidden;
 }
 
