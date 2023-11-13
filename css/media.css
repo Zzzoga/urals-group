@@ -63,12 +63,6 @@
 		width: 48%;
 	}
 	
-	.project__img img {
-		object-fit: cover;
-		width: 100%;
-		height: 100%;
-	}
-	
 	section.fos .section__wrapper {
 		padding: 50px 80px;
 	}
@@ -106,7 +100,7 @@
 
 @media only screen and (max-width : 1200px) {
 	.section__wrapper {
-		max-width: 100%;
+		max-width: 992px;
 	}
 	
 	.offer {
@@ -171,12 +165,6 @@
 	.project__img {
 		max-width: 100%;
 		width: 48%;
-	}
-	
-	.project__img img {
-		object-fit: cover;
-		width: 100%;
-		height: 100%;
 	}
 	
 	section.fos .section__wrapper {
@@ -418,7 +406,7 @@
 	}
 	
 	section.projects {
-	    padding: 80px 20px;
+	    padding: 0px 20px;
 	}
 	
 	.projects__accordion {
@@ -435,6 +423,7 @@
 	
 	.project__info {
 	    width: 100%;
+	    padding: 60px;
 	}
 	
 	.accordion__body {
@@ -443,7 +432,17 @@
 	
 	.project__img {
 	    width: 100%;
-	    margin-top: 30px;
+	}
+
+	.project__slider {
+	    flex-direction: column;
+	}
+	
+	
+	h3.project__title {
+	    font-size: 24px;
+	    line-height: 1.2;
+	    margin-bottom: 10px;
 	}
 	
 	.accordion__header {
@@ -593,7 +592,7 @@
 	}
 	
 	section.projects {
-	    padding: 80px 20px;
+	    padding: 0px 20px;
 	}
 	
 	.projects__accordion {
@@ -610,6 +609,7 @@
 	
 	.project__info {
 	    width: 100%;
+	    padding: 30px;
 	}
 	
 	.accordion__body {
@@ -619,7 +619,6 @@
 	.project__img {
 	    width: 100%;
 	    height: 240px;
-	    margin-top: 30px;
 	}
 	
 	.accordion__header {

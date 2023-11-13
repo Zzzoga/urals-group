@@ -40,46 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	maskPhone('input[type="tel"]')
 
-	// PROJECT ACCORDION
-
-	function clearProjects() {
-		document.querySelectorAll('a.accordion__btn').forEach(btn => {
-			btn.classList.remove('active')
-		})
-		document.querySelectorAll('.project__item').forEach(project => {
-			project.classList.remove('active')
-		})
-	}
-	
-	document.querySelectorAll('a.accordion__btn').forEach(btn => {
-		btn.addEventListener('click', e => {
-			e.preventDefault()
-			const btn = e.target
-			if (btn.classList.contains('btn__1')) {
-				clearProjects()
-				btn.classList.add('active')
-				document.querySelector('.project__item.project__1').classList.add('active')
-				if (document.documentElement.clientWidth < 768) {
-					document.querySelector('.accordion__body').style.height = '690px'
-				}
-			} else if (btn.classList.contains('btn__2')) {
-				clearProjects()
-				btn.classList.add('active')
-				document.querySelector('.project__item.project__2').classList.add('active')
-				if (document.documentElement.clientWidth < 768) {
-					document.querySelector('.accordion__body').style.height = '520px'
-				}
-			} else if (btn.classList.contains('btn__3')) {
-				clearProjects()
-				btn.classList.add('active')
-				document.querySelector('.project__item.project__3').classList.add('active')
-				if (document.documentElement.clientWidth < 768) {
-					document.querySelector('.accordion__body').style.height = '445px'
-				}
-			}
-		})
-	})
-
 	// MODAL FUNCTION
 
 	document.querySelectorAll('a.btn').forEach(btn => {
@@ -110,6 +70,25 @@ document.addEventListener('DOMContentLoaded', () => {
 		  disableOnInteraction: false,
 		}
 	});
+
+	var swiper1 = new Swiper(".project__img", {
+		navigation: {
+			nextEl: ".arrow__next",
+			prevEl: ".arrow__prev",
+		},
+	});
+
+	var swiper2 = new Swiper(".project__info", {
+		spaceBetween: 60,
+	});
+
+	const swipeAllSliders = (index) => {
+		swiper1.slideTo(index);
+		swiper2.slideTo(index);
+	}
+	  
+	swiper1.on('slideChange', () => swipeAllSliders(swiper1.activeIndex));
+	swiper2.on('slideChange', () => swipeAllSliders(swiper2.activeIndex));
 
 	// NAV 
 
